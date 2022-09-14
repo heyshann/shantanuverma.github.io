@@ -428,7 +428,7 @@ section{
 }
 
 .row .col:nth-child(6) .skill{
-    background: conic-gradient(#ffba08 75%, transparent 0);
+    background: conic-gradient(#ffba08 70%, transparent 0);
 }
 
 .row .col:nth-child(7) .skill{

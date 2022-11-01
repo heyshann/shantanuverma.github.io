@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -15,10 +19,13 @@
 }
 
 :root{
-    --bg-color: #10101a;
+    /* --bg-color: #10101a; */
+    --bg-color: black;
     --main-color: #2fbf71;
-    --2nd-main-color: #ffffffcc;
-    --text-color: #fff;
+    /* --2nd-main-color: #ffffffcc; */
+    --2nd-main-color: white;
+    /* --text-color: #fff; */
+    --text-color:white;
     --big-font: 5rem;
     --h2-font: 1.9rem;
     --p-font: 1rem;
@@ -36,7 +43,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--bg-color);
+    background: #10101a;
     padding: 20px 10%;
     transform: .3s;
 }
@@ -66,6 +73,26 @@ span{
 
 
 }
+
+.back-video{
+
+    position: absolute;
+    
+    
+}
+#background-video {
+    width: 70vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter:opacity(45%);
+    
+  }
 #menu-icon{
     font-size: 28px;
     z-index: 10001;
@@ -118,10 +145,11 @@ section{
 .home-text p{
     max-width: 470px;
     font-size: var(--p-font);
-    font-weight: 300;
+    font-weight:370;
     line-height: 2rem;
     margin-bottom: 1.5rem;
     color: var(--2nd-main-color);
+    
 }
 .btn{
     background: var(--main-color);
@@ -154,12 +182,13 @@ section{
 .about-img img{
     max-width: 100%;
     width: 400px;
-    height: auto;
+    height: 450px;
     border-radius: 5%;
 
 }
 .about-text h3{
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    color: white;
     font-size: 30px;
     font-weight: 300;
     letter-spacing: 6px;
@@ -169,7 +198,7 @@ section{
 .about-text p{
     max-width: 570px;
     font-size: var(--p-font);
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 1.5rem;
     line-height: 1.8rem;
     color: var(--2nd-main-color);
@@ -194,6 +223,35 @@ section{
     margin: 100px 0;
 
 } */
+
+
+/* Experience */
+
+
+.box1{
+    background: #0b0b13;
+    display: flex;
+    border-radius: 20px;
+    transition: all .4sec;
+}
+.col-md-6 img{
+    
+    border-radius: 8%;
+    
+}   
+.col-md-7{
+
+    padding-left: 10px;
+}
+
+.col-md-7 p{
+
+    font-weight: 50px;
+   
+}
+.col-md-7 h4{
+    color:#ffba08;
+}
 
 
 /* education */
@@ -379,9 +437,10 @@ section{
 
 
 
+
+
+
 /* skilss */
-
-
 
 
 
@@ -411,10 +470,10 @@ section{
                 -5px -5px 15px rgba(0, 0, 0, 0.5);
 }
 .row .col:nth-child(1) .skill{
-    background: conic-gradient(#ffba08 75%, transparent 0);
+    background: conic-gradient(#ffba08 70%, transparent 0);
 }
 .row .col:nth-child(2) .skill{
-    background: conic-gradient(#ffba08 75%, transparent 0);
+    background: conic-gradient(#ffba08 65%, transparent 0);
 }
 .row .col:nth-child(3) .skill{
     background: conic-gradient(#ffba08 72%, transparent 0);

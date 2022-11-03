@@ -523,3 +523,21 @@ section{
     padding: 5px 0;
     letter-spacing: 2px;
 }
+.gotopbtn{
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    background: #27ae60;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 10%;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 23px;
+    vertical-align: central;
+    align-items: center;
+    padding: 3px  5px 18px;
+}

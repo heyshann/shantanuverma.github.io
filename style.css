@@ -95,6 +95,8 @@ span{
 section{
 
     padding: 120px 14%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .home{
 
@@ -120,7 +122,7 @@ section{
 }
 
 .home-text h1{
-    font-size: 50px;
+    font-size: clamp(36px, 4vw, 50px);
     color: var(--text-color);
     font-weight: 700;
     line-height: 1;
@@ -226,6 +228,10 @@ section{
     border-radius: 20px;
     transition: all .4sec;
     width: 82%;
+    max-width: 1200px;
+}
+.col-md-6{
+    flex: 0 0 180px;
 }
 .col-md-6 img{
     
@@ -236,6 +242,7 @@ section{
 }   
 .col-md-7{
 
+    flex: 1;
     padding-left: 10px;
 }
 
@@ -647,3 +654,51 @@ section{
     color: #27ae60;;
 
   }
+
+/* ===== Responsive fixes for different screen sizes ===== */
+
+/* Large desktop monitors (1440p and up) */
+@media (min-width: 1600px){
+    section{
+        padding: 140px 10%;
+    }
+    .home-img img{
+        margin-left: 100px;
+    }
+}
+
+/* Ultra-wide monitors */
+@media (min-width: 2200px){
+    section{
+        max-width: 1800px;
+        padding: 160px 8%;
+    }
+}
+
+/* Small laptops / tablets */
+@media (max-width: 1024px){
+    section{
+        padding: 100px 6%;
+    }
+    .home, .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-img img{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .box1{
+        width: 100%;
+        max-width: 100%;
+    }
+    .timeline{
+        width: 95%;
+    }
+    .card{
+        width: 90%;
+    }
+    .card:nth-child(even){
+        margin-left: 0;
+    }
+}
